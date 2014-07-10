@@ -1,7 +1,10 @@
-### Rundiv.
+## Rundiv.
   You can use it for your personal gallery and focus picture.
+  
   Create for moblie pages.
+  
   Without jQuery.Less than 6KB.
+  
   enjoy it!
 
 ## Usage
