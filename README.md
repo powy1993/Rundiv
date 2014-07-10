@@ -7,7 +7,7 @@
   
   Enjoy it!
 
-  This is a [Demo](http://1.rundiv.sinaapp.com/index.html).]
+  This is a [Demo](http://1.rundiv.sinaapp.com/index.html).
   
   你可以将它用在个人相册或者焦点图上面。
   
