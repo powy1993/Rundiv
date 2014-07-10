@@ -7,6 +7,8 @@
   
   Enjoy it!
 
+  This is a [Demo](http://1.rundiv.sinaapp.com/index.html).
+  
 ## Usage
 Rundiv only needs to follow a simple pattern. Here is an example:
 
