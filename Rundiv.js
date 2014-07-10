@@ -149,25 +149,27 @@ function Rundiv(container, options) {
   }
   
   function setindex(newpage){
-    options.formerpage=index;
+    
+    options.formerpage = index;
     index = newpage;
     offloadFn(options.callback && options.callback(index, slides[index]));
-    if(options.hasNav) {
+    
+    if (options.hasNav) {
       handleNav(options.formerpage,newpage);
     }
-    if(options.auto) {
+    if (options.auto) {
       begin();}
   }
 
   function handleNav(page,to){
 
-    options.listelem.children[page].className="";
-    options.listelem.children[to].className="active";
+    options.listelem.children[page].className = "";
+    options.listelem.children[to].className = "active";
 
   }
 
   function mark(obj){
-    options.listelem=obj;
+    options.listelem = obj;
     var tmp = obj.children;
     var page = tmp.length;
     while(page--){
@@ -494,12 +496,14 @@ function Rundiv(container, options) {
   // expose the Rundiv API
   return {
     linkNav:function(listName){
-      var obj=document.getElementById(listName);
+      
+      var obj = document.getElementById(listName);
       mark(obj);
+      
         obj.addEventListener("click",function(e){
         stop();
         elem = e.target;
-        var page=parseInt(elem.getAttribute('data-index'),10);
+        var page = parseInt(elem.getAttribute('data-index'),10);
         if(page) slide(page-1,800);
         },false);
     },
