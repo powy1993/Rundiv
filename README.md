@@ -7,7 +7,14 @@
   
   Enjoy it!
 
-  This is a [Demo](http://1.rundiv.sinaapp.com/index.html).
+  This is a [Demo](http://1.rundiv.sinaapp.com/index.html).]
+  
+  你可以将它用在个人相册或者焦点图上面。
+  
+  请注意，这是针对手机端页面设计的。（当然，也可以用在桌面端，不过不兼容旧版本的ie）
+  
+  这是一个不使用jQuery小巧的框架，大概只有6KB。
+  
   
 ## Usage
 Rundiv only needs to follow a simple pattern. Here is an example:
@@ -107,7 +114,4 @@ Rundiv exposes a few functions that can be useful for script control of your sli
 `getNumSlides()` returns the total amount of slides
 
 `slide(index, duration)` slide to set index position (duration: speed of transition in milliseconds)
-
-## Browser Support
-Rundiv is now compatible with all browsers, including IE7+. Swipe works best on devices that support CSS transforms and touch, but can be used without these as well. A few helper methods determine touch and CSS transition support and choose the proper animation methods accordingly.
 
