@@ -1,0 +1,122 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<title>Rundiv</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+
+<!--css only use in Demo,you are unnessary to include it-->
+<link href='style.css' rel='stylesheet'/>
+
+<style>
+
+/* Rundiv required styles */
+
+#rundiv {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.wrap {
+  overflow: hidden;
+  position: relative;
+}
+.wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+/* END required styles */
+
+</style>
+
+</head>
+<body>
+
+<h1>Rundiv</h1>
+
+
+
+<div id='rundiv' style='width:95%;max-width:900px;margin:0 auto;'>
+  <div class='wrap'>
+    <div><b>1</b></div>
+    <div><b>2</b></div>
+    <div><b>3</b></div>
+    <div><b>4</b></div>
+    <div><b>5</b></div>
+    <div><b>6</b></div>
+    <div><b>7</b></div>
+    <div><b>8</b></div>
+    <div><b>9</b></div>
+    <div><b>10</b></div>
+    <div><b>11</b></div>
+    <div><b>12</b></div>
+    <div><b>13</b></div>
+    <div><b>14</b></div>
+    <div><b>15</b></div>
+    <div><b>16</b></div>
+    <div><b>17</b></div>
+    <div><b>18</b></div>
+    <div><b>19</b></div>
+    <div><b>20</b></div>
+  </div>
+</div>
+
+
+
+<div class="rundivBar">
+  
+  <button onclick='rundiv.prev()'>prev</button> 
+  <button onclick='rundiv.next()'>next</button>
+  <button onclick='alert(rundiv.getPage())' >getpage</button>
+  <button onclick='alert(rundiv.getNumSlides())' >sum of Slide</button>
+  <ol id="rundivNav">
+    <li class="active">1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+  </ol>
+</div>
+
+
+
+<script src='Rundiv.min.js'></script>
+<script>
+
+// pure JS
+
+var elem = document.getElementById('rundiv');
+window.rundiv = Rundiv(elem, {
+   hasNav:true,
+   startSlide: 1,
+   auto: 4000,
+   continuous: true,
+  // disableScroll: true,
+  // stopPropagation: true,
+  // callback: function(index, element) {},
+  // transitionEnd: function(index, element) {}
+});
+rundiv.linkNav("rundivNav");    //the id of the ol or ul (if you use this,please make sure hasNav:true)    
+
+
+// with jQuery
+// window.rundiv = $('#rundiv').Rundiv().data('Rundiv');
+
+</script>

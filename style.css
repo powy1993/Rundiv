@@ -1,0 +1,75 @@
+*{
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+body {
+  -webkit-text-size-adjust:none;
+  font-family:sans-serif;
+  min-height:416px;
+}
+h1 {
+  font-size:33px;
+  margin:50px 0 15px;
+  text-align:center;
+  color:#212121;
+}
+h2 {
+  font-size:14px;
+  font-weight:bold;
+  color:#3c3c3c;
+  margin:20px 10px 10px;
+}
+small {
+  margin:0 10px 30px;
+  display:block;
+  font-size:12px;
+}
+a {
+  margin:0 0 0 10px;
+  font-size:12px;
+  color:#3c3c3c;
+}
+
+
+html, body {
+  background: #f3f3f3;
+}
+
+.rundivBar{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.rundivBar button{
+  border: 1px solid #000;
+  padding: 4px;
+}
+
+.rundivBar #rundivNav li{
+  display: inline-block;
+  background: #444;
+  width: 20px;
+  color: #fff;
+}
+.rundivBar #rundivNav .active{
+  background: #980;
+}
+
+#rundiv div b {
+  display:block;
+  font-weight:bold;
+  color:#14ADE5;
+  font-size:20px;
+  text-align:center;
+  margin:10px;
+  padding:100px 10px;
+  box-shadow: 0 1px #EBEBEB;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #E5E5E5 #D3D3D3 #B9C1C6;
+}
