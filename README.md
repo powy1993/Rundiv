@@ -5,7 +5,7 @@
   
   Without jQuery.Less than 6KB.
   
-  enjoy it!
+  Enjoy it!
 
 ## Usage
 Rundiv only needs to follow a simple pattern. Here is an example:
