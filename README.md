@@ -105,6 +105,8 @@ Rundiv can take an optional second parameter– an object of key/value settings:
 
 Rundiv exposes a few functions that can be useful for script control of your slider.
 
+`linkNav("id")` Create a closely connected with your div navigation (id:id of your Nav)
+
 `prev()` slide to prev
 
 `next()` slide to next
