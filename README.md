@@ -5,7 +5,7 @@
   
   Without jQuery.Less than 6KB.
   
-  Enjoy it!
+  Enjoy!
 
   This is a [Demo](http://1.rundiv.sinaapp.com/index.html).
   
@@ -13,7 +13,7 @@
   
   请注意，这是针对手机端页面设计的。（当然，也可以用在桌面端，不过不兼容旧版本的ie）
   
-  这是一个不使用jQuery小巧的框架，大概只有6KB。
+  这是一个不使用jQuery小巧的框架，不到6KB。
   
   
 ## Usage
