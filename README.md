@@ -27,6 +27,7 @@ Rundiv only needs to follow a simple pattern. Here is an example:
     <div></div>
   </div>
 </div>
+
 <!--alternative-->
 <div>
   <ol id="rundivNav">  
@@ -35,6 +36,7 @@ Rundiv only needs to follow a simple pattern. Here is an example:
     <li>3</li>
   </ol>
 </div>
+<!--alternative-->
 ```
 
 Above is the initial required structure– a series of elements wrapped in two containers. Place any content you want within the items. The containing div will need to be passed to the Rundiv function like so:
