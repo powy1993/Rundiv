@@ -103,6 +103,25 @@ Rundiv can take an optional second parameter– an object of key/value settings:
 - **transitionEnd** Function - runs at the end slide transition.
 
 
+
+- **havNav** Boolean *(defaule:false)* - 如果你要使用导航栏 那么必须为true
+
+- **startSlide** Integer *(default:0)* - 从第几张开始
+
+- **speed** Integer *(default:300)* - 切换速度
+
+- **auto** Integer - 设置自动播放（数值为轮播速度，单位毫秒）
+
+- **continuous** Boolean *(default:true)* - 是否循环播放
+
+- **disableScroll** Boolean *(default:false)* -是否允许触摸滑动
+
+- **stopPropagation** Boolean *(default:false)* - 是否阻止事件冒泡
+
+- **callback** Function - 滚动开始时的回调函数
+
+- **transitionEnd** Function - 滚动结束后的回调函数
+
 ## Rundiv API
 
 Rundiv exposes a few functions that can be useful for script control of your slider.
@@ -119,3 +138,17 @@ Rundiv exposes a few functions that can be useful for script control of your sli
 
 `slide(index, duration)` slide to set index position (duration: speed of transition in milliseconds)
 
+
+Rundiv也提供了一些借口供使用此插件的开发者调用：
+
+`linkNav("id")` 创建一个与你的轮播图相连的导航。（id为导航ol/ul的‘id’）
+
+`prev()`  直接滑向前一个
+
+`next()`  直接滑入下一个
+
+`getPage()` 返回当前滑动块的页码
+
+`getNumSlides()` 返回总共有多少个滑动块
+
+`slide(index, duration)` 直接滑到第index个块，所用的时间是duration(ms).
