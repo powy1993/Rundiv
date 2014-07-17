@@ -102,7 +102,7 @@ Rundiv can take an optional second parameter– an object of key/value settings:
 
 - **transitionEnd** Function - runs at the end slide transition.
 
-
+## 设置
 
 - **havNav** Boolean *(defaule:false)* - 如果你要使用导航栏 那么必须为true
 
@@ -138,6 +138,8 @@ Rundiv exposes a few functions that can be useful for script control of your sli
 
 `slide(index, duration)` slide to set index position (duration: speed of transition in milliseconds)
 
+
+## 接口
 
 Rundiv也提供了一些借口供使用此插件的开发者调用：
 
