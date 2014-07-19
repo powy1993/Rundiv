@@ -86,7 +86,7 @@ Rundiv can take an optional second parameter– an object of key/value settings:
 
 - **havNav** Boolean *(defaule:false)* - must be true if you want a Nav
 
-- **startSlide** Integer *(default:0)* - index position Swipe should start at
+- **startSlide** Integer *(default:1)* - index position Swipe should start at
 
 -	**speed** Integer *(default:300)* - speed of prev and next transitions in milliseconds.
 
@@ -106,7 +106,7 @@ Rundiv can take an optional second parameter– an object of key/value settings:
 
 - **havNav** Boolean *(defaule:false)* - 如果你要使用导航栏 那么必须为true
 
-- **startSlide** Integer *(default:0)* - 从第几张开始
+- **startSlide** Integer *(default:1)* - 从第几张开始
 
 - **speed** Integer *(default:300)* - 切换速度
 
