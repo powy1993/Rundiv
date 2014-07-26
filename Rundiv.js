@@ -504,7 +504,7 @@ function Rundiv(container, options) {
         stop();
         elem = e.target;
         var page = parseInt(elem.getAttribute('data-index'),10);
-        if(page) slide(page-1,800);
+        if(page) slide(page-1,300);
         },false);
     },
     setup: function() {
