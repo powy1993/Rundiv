@@ -1,6 +1,6 @@
 /*
  * Rundiv 1.0
- * Tim Wang,China
+ * timWang@qqdyw.net,China
  *
 */
 
