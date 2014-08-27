@@ -198,7 +198,7 @@ function Rundiv(container, options) {
     style.OTransitionDuration =
     style.transitionDuration = speed + 'ms';
 
-    style.webkitTransform = 'translate(' + dist + 'px,0)' + 'translateZ(0)';
+    style.webkitTransform = 'translate(' + dist + 'px,0) ' + 'translateZ(0)';
     style.msTransform =
     style.MozTransform =
     style.OTransform = 'translateX(' + dist + 'px)';
@@ -276,6 +276,7 @@ function Rundiv(container, options) {
         case 'msTransitionEnd':
         case 'oTransitionEnd':
         case 'otransitionend':
+        case 'mozTransitionEnd':
         case 'transitionend': offloadFn(this.transitionEnd(event)); break;
         case 'resize': offloadFn(setup); break;
       }
@@ -375,7 +376,7 @@ function Rundiv(container, options) {
       var isValidSlide =
             Number(duration) < 250               // if slide duration is less than 250ms
             && Math.abs(delta.x) > 20            // and if slide amt is greater than 20px
-            || Math.abs(delta.x) > width/2;      // or if slide amt is greater than half the width
+            || Math.abs(delta.x) > width * 0.4;      // or if slide amt is greater than half the width
 
       // determine if slide attempt is past start and end
       var isPastBounds =
@@ -481,6 +482,7 @@ function Rundiv(container, options) {
       element.addEventListener('msTransitionEnd', events, false);
       element.addEventListener('oTransitionEnd', events, false);
       element.addEventListener('otransitionend', events, false);
+      element.addEventListener('mozTransitionend', events, false);
       element.addEventListener('transitionend', events, false);
     }
 
@@ -583,6 +585,7 @@ function Rundiv(container, options) {
         element.removeEventListener('msTransitionEnd', events, false);
         element.removeEventListener('oTransitionEnd', events, false);
         element.removeEventListener('otransitionend', events, false);
+        element.removeEventListener('mozTransitionend', events, false);
         element.removeEventListener('transitionend', events, false);
         window.removeEventListener('resize', events, false);
 
