@@ -1,7 +1,7 @@
 /*
  * Rundiv 1.0
- * timWang@qqdyw.net,China
- *
+ * timWang@qqdyw.net,HenanQQ
+ * I'm trying to support windows mobile phone(wait!)
 */
 
 function Rundiv(container, options) {
