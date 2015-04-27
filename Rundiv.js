@@ -504,7 +504,7 @@ function Rundiv(container, options) {
       
         obj.addEventListener("click",function(e){
         stop();
-        elem = e.target;
+        var elem = e.target;
         var page = parseInt(elem.getAttribute('data-index'),10);
         if(page) slide(page-1,300);
         },false);
