@@ -423,8 +423,9 @@ function Rundiv(container, options) {
             setindex(circle(index-1));
 
           }
-
-          options.callback && options.callback(index, slides[index]);
+          
+          // fix a bug when swipeEnd
+          // options.callback && options.callback(index, slides[index]);
 
         } else {
 
